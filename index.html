@@ -3,36 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hey there, it's Zaf!</title>
-    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <header>
-        <h1>Hey there, it's Zaf!</h1>
-    </header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    
-    <main>
-            <section id="home">
-                <h2>Home</h2>
-                <p>This is the main content area. You can add your content here.</p>
-            </section>
-            <section id="about">
-                <h2>About</h2>
-                <p>About us content goes here.</p>
-            </section>
-            <section id="contact">
-                <h2>Contact</h2>
-                <p>Contact information and form.</p>
-            </section>
-    </main>        
-   
-    <footer>
-        <p>&copy; 2024 My Website</p>
-    </footer>
+    <nav id="desktop-nav"></nav>
+        <div class="logo">Zaf</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    <script src="script.js"></script>
 </body>
 </html>
+<nav id:"hamburger-nav">
+    <div class="logo">Zaf</div>
+    <div class="hamburger-menu"></div>
+    <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="menu-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </div>
+</nav>
